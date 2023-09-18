@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'cadastra-adotante',
     loadChildren: () => import('./cadastra-adotante/cadastra-adotante.module').then( m => m.CadastraAdotantePageModule)
   },
+  {
+    path: 'dashboard-adotante',
+    loadChildren: () => import('./dashboard-adotante/dashboard-adotante.module').then( m => m.DashboardAdotanteModule)
+  },
 ];
 
 @NgModule({

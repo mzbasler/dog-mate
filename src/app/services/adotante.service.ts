@@ -24,7 +24,7 @@ export class AdotanteService {
     return this.adotantesRef.push(adotante);
   }
 
-  getNomeTutor(): Observable<string> {
+  getNomeAdotante(): Observable<string> {
     return this.http.get<string>('/adotantes');
   }
 }
