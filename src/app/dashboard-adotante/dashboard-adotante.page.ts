@@ -6,6 +6,7 @@ import { AdotanteService } from '../services/adotante.service';
   templateUrl: './dashboard-adotante.page.html',
   styleUrls: ['./dashboard-adotante.page.scss'],
 })
+
 export class DashboardAdotantePage implements OnInit {
 
   nomeAdotante: string ="";

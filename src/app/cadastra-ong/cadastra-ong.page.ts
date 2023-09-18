@@ -14,10 +14,10 @@ export class CadastraOngPage {
 
   adicionarAdotante() {
     this.ongService.addOng(this.ong).subscribe(
-      (response) => {
+      (response: any) => {
         console.log('Adotante adicionado com sucesso', response);
       },
-      (error) => {
+      (error: any) => {
         console.error('Erro ao adicionar adotante', error);
       }
     );

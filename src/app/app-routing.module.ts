@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'dashboard-adotante',
     loadChildren: () => import('./dashboard-adotante/dashboard-adotante.module').then( m => m.DashboardAdotanteModule)
   },
+  {
+    path: 'dashboard-ong',
+    loadChildren: () => import('./dashboard-ong/dashboard-ong.module').then( m => m.DashboardOngModule)
+  },
 ];
 
 @NgModule({
