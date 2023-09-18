@@ -1,0 +1,106 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <div class="logo-marca-wrap">
+      <ion-img src="assets/icon/logo.svg" class="logo"></ion-img>
+      <ion-title class="marca">Dog Mate</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-title class="cadastroCao">Informações do cão</ion-title>
+    <ion-item>
+      <ion-input
+        label="Nome do cão"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="cao.nomeCao"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-select
+        label="Tipo de Pelagem"
+        label-placement="floating"
+        fill="solid"
+        [(ngModel)]="cao.tipoPelagem"
+      >
+        <ion-select-option value="pelo-curto">Pelo Curto</ion-select-option>
+        <ion-select-option value="pelo-longo">Pelo Longo</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        label="Idade estimada do cão"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="cao.idadeEstimada"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-title class="checkBoxCao">O cão é castrado?</ion-title>
+    <ion-item>
+      <ion-segment [(ngModel)]="cao.castrado">
+        <ion-segment-button value="true">
+          <ion-label>Sim</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="false">
+          <ion-label>Não</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-title class="checkBoxCao">O cão é vermifugado?</ion-title>
+    <ion-item>
+      <ion-segment [(ngModel)]="cao.vermifugado">
+        <ion-segment-button value="true">
+          <ion-label>Sim</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="false">
+          <ion-label>Não</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-title class="checkBoxCao">Vacinas estão em dia?</ion-title>
+    <ion-item>
+      <ion-segment [(ngModel)]="cao.vacinas">
+        <ion-segment-button value="true">
+          <ion-label>Sim</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="false">
+          <ion-label>Não</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-title class="checkBoxCao">Gênero:</ion-title>
+    <ion-item>
+      <ion-segment [(ngModel)]="cao.sexo">
+        <ion-segment-button value="m">
+          <ion-label>Macho</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="f">
+          <ion-label>Fêmea</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item>
+      <ion-textarea
+        label="Breve histórico do cão"
+        label-placement="floating"
+        fill="solid"
+        placeholder="descreva em poucas palavras um breve histórico do cão"
+        [(ngModel)]="cao.historico"
+        required
+      ></ion-textarea>
+    </ion-item>
+    <br />
+  
+    <ion-item>
+      <ion-button expand="full" (click)="adicionarCao()"
+        >Finalizar Cadastro</ion-button
+      >
+    </ion-item>
+  </ion-list>
+</ion-content>

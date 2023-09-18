@@ -31,6 +31,11 @@ const routes: Routes = [
     path: 'dashboard-ong',
     loadChildren: () => import('./dashboard-ong/dashboard-ong.module').then( m => m.DashboardOngModule)
   },
+  {
+    path: 'adicionar-cao',
+    loadChildren: () => import('./adicionar-cao/adicionar-cao.module').then( m => m.AdicionarCaoModule)
+  },
+  
 ];
 
 @NgModule({

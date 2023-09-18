@@ -27,35 +27,14 @@ export class Ong {
   telefoneOng: string = '';
 }
 
-// = {
-//   emailTutor: '',
-//   senhaTutor: '',
-//   repetirSenhaTutor: '',
-//   nomeCompleto: '',
-//   idade: 0,
-//   localizacao: '',
-//   telefoneTutor: '',
-//   tipoMoradia: '',
-//   quantidadeCriancas: 0,
-//   tempoDisponivel: '',
-//   tipoPelagem: '',
-//   pesoEstimado: '',
-//   motivoAdocao: '',
-//   sexo: [],
-//   compromissoResponsabilidade: false,
-// };
-
-// export class Nota {
-//     id: number;
-//     titulo: string;
-//     texto: string ="null";
-//     modificacao: Date;
-//     status: number;
-
-//     constructor(id: number, titulo: string) {
-//         this.id = id;
-//         this.titulo = titulo;
-//         this.modificacao = new Date();
-//         this.status = 0;
-//     }
-// }
+export class Cao {
+  nomeCao: string = '';
+  tipoPelagem: string = '';
+  pesoEstimado: string = '';
+  idadeEstimada: string = '';
+  castrado: boolean = false;
+  vermifugado: boolean = false;
+  vacinas: boolean = false;
+  historico: string = '';
+  sexo: string = '';
+}
