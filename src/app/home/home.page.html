@@ -1,0 +1,56 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <div class="logo-marca-wrap">
+      <ion-img src="assets/icon/logo.svg" class="logo"></ion-img>
+      <ion-title class="marca">Dog Mate</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container-login">
+    <h1 id="login-txt">Login</h1>
+
+    <ion-input
+      [(ngModel)]="email"
+      id="email"
+      type="email"
+      label="Email"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Insira seu e-mail"
+    ></ion-input>
+
+    <ion-input
+      [(ngModel)]="senha"
+      id="senha"
+      type="password"
+      label="Senha"
+      label-placement="floating"
+      fill="outline"
+      placeholder="Insira sua senha"
+    ></ion-input>
+
+    <div class="btn-container">
+      <ion-button (click)="autenticar()" id="btn-entrar" expand="full"
+        >Entrar</ion-button
+      >
+    </div>
+    <div class="btn-container">
+      <ion-button
+        (click)="navegarPara('/seleciona-perfil')"
+        id="btn-cadastrar"
+        expand="full"
+        >Cadastrar</ion-button
+      >
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title class="footer-txt"
+      >Dog Mate - Adoção responsável de cães</ion-title
+    >
+  </ion-toolbar>
+</ion-footer>

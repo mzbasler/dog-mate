@@ -1,0 +1,31 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <div class="logo-marca-wrap">
+      <ion-img src="assets/icon/logo.svg" class="logo"></ion-img>
+      <ion-title class="marca">Dog Mate</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container-criar-conta">
+    <p id="criar-conta-txt">Criar conta</p>
+    <p id="perfil-txt">Em qual destes perfís você se encaixa melhor?</p>
+    <div class="btn-wrap">
+      <ion-button class="custom-button" [routerLink]="['/cadastra-ong']">
+        <img class="btn-perfil" src="/assets/img/btn-ong.svg" alt="" />
+      </ion-button>
+      <ion-button class="custom-button" [routerLink]="['/cadastra-adotante']">
+        <img class="btn-perfil" src="/assets/img/btn-adotante.svg" alt="" />
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title class="footer-txt"
+      >Dog Mate - Adoção responsável de cães</ion-title
+    >
+  </ion-toolbar>
+</ion-footer>

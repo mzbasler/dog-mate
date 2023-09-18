@@ -1,0 +1,215 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <div class="logo-marca-wrap">
+      <ion-img src="assets/icon/logo.svg" class="logo"></ion-img>
+      <ion-title class="marca">Dog Mate</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-title class="cadastroPessoa">Informações de acesso</ion-title>
+    <ion-item>
+      <ion-input
+        label="E-mail"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="adotante.emailAdotante"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        type="password"
+        label="Senha"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="adotante.senhaAdotante"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        type="password"
+        label="Repetir Senha"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="adotante.repetirSenhaAdotante"
+        required
+      ></ion-input>
+    </ion-item>
+    <br />
+
+    <ion-title class="informacoesPessoais">Informações Pessoais</ion-title>
+    <ion-item>
+      <ion-input
+        label="Nome completo"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="adotante.nomeCompleto"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        label="Idade"
+        label-placement="floating"
+        type="number"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="adotante.idade"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        label="Localização"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="adotante.localizacao"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        type="tel"
+        pattern="[0-9]*"
+        label="Telefone"
+        label-placement="floating"
+        fill="solid"
+        placeholder="(DD)00000000"
+        [(ngModel)]="adotante.telefoneAdotante"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <br />
+
+    <ion-title class="perfilTutor">Perfil do Adotante</ion-title>
+    <ion-item>
+      <ion-select
+        label="Tipo de Moradia"
+        label-placement="floating"
+        fill="solid"
+        [(ngModel)]="adotante.tipoMoradia"
+      >
+        <ion-select-option value="apartamento">Apartamento</ion-select-option>
+        <ion-select-option value="loft">Loft</ion-select-option>
+        <ion-select-option value="casa-com-patio"
+          >Casa com patio</ion-select-option
+        >
+        <ion-select-option value="casa-sem-patio"
+          >Casa sem patio</ion-select-option
+        >
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        type="number"
+        label="Crianças no Convívio"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="adotante.quantidadeCriancas"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-select
+        label="Tempo Disponível para o Pet"
+        label-placement="floating"
+        fill="solid"
+        [(ngModel)]="adotante.tempoDisponivel"
+      >
+        <ion-select-option value="1-2-horas-diarias"
+          >1 a 2 horas diárias</ion-select-option
+        >
+        <ion-select-option value="2-4-horas-diarias"
+          >2 a 4 horas diárias</ion-select-option
+        >
+        <ion-select-option value="mais-de-4-horas-diarias"
+          >Mais de 4 horas diárias</ion-select-option
+        >
+      </ion-select>
+    </ion-item>
+    <br />
+
+    <ion-title class="infoCao">Informações Desejáveis do Cão</ion-title>
+
+    <ion-item>
+      <ion-select
+        label="Tipo de Pelagem"
+        label-placement="floating"
+        fill="solid"
+        [(ngModel)]="adotante.tipoPelagem"
+      >
+        <ion-select-option value="pelo-curto">Pelo Curto</ion-select-option>
+        <ion-select-option value="pelo-longo">Pelo Longo</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select
+        label="Peso Estimado"
+        label-placement="floating"
+        fill="solid"
+        [(ngModel)]="adotante.pesoEstimado"
+      >
+        <ion-select-option value="1-3-kg">1kg a 3kg</ion-select-option>
+        <ion-select-option value="3-5-kg">3kg a 5kg</ion-select-option>
+        <ion-select-option value="5-10-kg">5kg a 10kg</ion-select-option>
+        <ion-select-option value="mais-de-10-kg"
+          >Mais de 10kg</ion-select-option
+        >
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-textarea
+        label="Motivo da Adoção"
+        label-placement="floating"
+        fill="solid"
+        placeholder="descreva em poucas palavras o motivo da adoção"
+        [(ngModel)]="adotante.motivoAdocao"
+        required
+      ></ion-textarea>
+    </ion-item>
+    <br />
+    <ion-item>
+      <ion-segment [(ngModel)]="adotante.sexo">
+        <ion-segment-button value="m">
+          <ion-label>Macho</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="f">
+          <ion-label>Fêmea</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+
+    <ion-title class="responsabilidade">Responsabilidade</ion-title>
+    <ion-item>
+      <ion-checkbox
+        labelPlacement="end"
+        [(ngModel)]="adotante.compromissoResponsabilidade"
+        required
+        >Me comprometo a promover assistência à Saúde, à alimentação, <br />
+        ao lazer e à moradia do meu futuro pet.</ion-checkbox
+      >
+      <br />
+    </ion-item>
+    <br />
+    <ion-item>
+      <ion-button expand="full" (click)="adicionarAdotante()"
+        >Finalizar Cadastro</ion-button
+      >
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,89 @@
+// header
+ion-header,
+ion-header ion-toolbar {
+  box-shadow: none;
+  --background: white;
+  --color: black;
+}
+.logo-marca-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0x;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px 10px 20px;
+  padding: 0;
+  border: none;
+}
+.marca {
+  font-family: "Baloo2", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+/* Formulário */
+ion-content {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+ion-list {
+  max-width: 20cm;
+  width: 100%;
+  margin: 0 auto;
+}
+ion-input {
+  font-family: "Baloo2", sans-serif;
+  color: rgb(105, 105, 105);
+  text-indent: 15px;
+}
+
+/* Estilizar o rótulo do campo de entrada */
+ion-label {
+  font-family: "Baloo2", sans-serif;
+  color: rgb(105, 105, 105);
+}
+
+/* Estilizar o espaçamento entre os campos de entrada */
+ion-item {
+  margin-bottom: 15px;
+}
+
+ion-select {
+  //AQUII
+  font-family: "Baloo2", sans-serif;
+  color: rgb(105, 105, 105);
+}
+
+ion-textarea {
+  font-family: "Baloo2", sans-serif;
+  color: rgb(105, 105, 105);
+  text-indent: 15px;
+}
+
+ion-checkbox {
+  font-family: "Baloo2", sans-serif;
+  font-size: 1rem;
+  color: rgb(105, 105, 105);
+  text-wrap: 15%;
+}
+
+ion-segment {
+  font-family: "Baloo2", sans-serif;
+  font-size: 1rem;
+  color: rgb(105, 105, 105);
+}
+
+/* Estilizar o botão de finalizar */
+ion-button {
+  font-family: "Baloo2", sans-serif;
+  font-size: 15px; /* Tamanho da fonte */
+  display: flex;
+  align-items: center;
+}

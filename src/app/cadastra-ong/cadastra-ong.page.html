@@ -1,0 +1,81 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <div class="logo-marca-wrap">
+      <ion-img src="assets/icon/logo.svg" class="logo"></ion-img>
+      <ion-title class="marca">Dog Mate</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-title class="cadastroPessoa">Informações de acesso</ion-title>
+    <ion-item>
+      <ion-input
+        label="E-mail"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="ong.emailOng"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        type="password"
+        label="Senha"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="ong.senhaOng"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        type="password"
+        label="Repetir Senha"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="ong.repetirSenhaOng"
+        required
+      ></ion-input>
+    </ion-item>
+    <br />
+
+    <ion-title class="informacoesPessoais">Informações da ONG</ion-title>
+    <ion-item>
+      <ion-input
+        label="Nome completo"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="ong.nomeOng"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        label="Localização"
+        label-placement="floating"
+        fill="solid"
+        placeholder=""
+        [(ngModel)]="ong.localizacaoOng"
+        required
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        type="tel"
+        pattern="[0-9]*"
+        label="Telefone"
+        label-placement="floating"
+        fill="solid"
+        placeholder="(DD)00000000"
+        [(ngModel)]="ong.telefoneOng"
+        required
+      ></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
