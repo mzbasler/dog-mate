@@ -8,74 +8,94 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-list>
-    <ion-title class="cadastroPessoa">Informações de acesso</ion-title>
-    <ion-item>
-      <ion-input
-        label="E-mail"
-        label-placement="floating"
-        fill="solid"
-        placeholder=""
-        [(ngModel)]="ong.emailOng"
-        required
-      ></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input
-        type="password"
-        label="Senha"
-        label-placement="floating"
-        fill="solid"
-        placeholder=""
-        [(ngModel)]="ong.senhaOng"
-        required
-      ></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input
-        type="password"
-        label="Repetir Senha"
-        label-placement="floating"
-        fill="solid"
-        placeholder=""
-        [(ngModel)]="ong.repetirSenhaOng"
-        required
-      ></ion-input>
-    </ion-item>
-    <br />
+  <h3 class="cadastroPessoa">Informações de acesso</h3>
+  <ion-item>
+    <ion-input
+      label="E-mail"
+      label-placement="floating"
+      fill="solid"
+      placeholder=""
+      [(ngModel)]="ong.emailOng"
+      required
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input
+      type="password"
+      label="Senha"
+      label-placement="floating"
+      fill="solid"
+      placeholder=""
+      [(ngModel)]="ong.senhaOng"
+      required
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input
+      type="password"
+      label="Repetir Senha"
+      label-placement="floating"
+      fill="solid"
+      placeholder=""
+      [(ngModel)]="ong.repetirSenhaOng"
+      required
+    ></ion-input>
+  </ion-item>
+  <br />
 
-    <ion-title class="informacoesPessoais">Informações da ONG</ion-title>
-    <ion-item>
-      <ion-input
-        label="Nome completo"
-        label-placement="floating"
-        fill="solid"
-        placeholder=""
-        [(ngModel)]="ong.nomeOng"
-        required
-      ></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input
-        label="Localização"
-        label-placement="floating"
-        fill="solid"
-        placeholder=""
-        [(ngModel)]="ong.localizacaoOng"
-        required
-      ></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input
-        type="tel"
-        pattern="[0-9]*"
-        label="Telefone"
-        label-placement="floating"
-        fill="solid"
-        placeholder="(DD)00000000"
-        [(ngModel)]="ong.telefoneOng"
-        required
-      ></ion-input>
-    </ion-item>
-  </ion-list>
+  <h3 class="informacoesPessoais">Informações da ONG</h3>
+  <ion-item>
+    <ion-input
+      label="Nome da ONG"
+      label-placement="floating"
+      fill="solid"
+      placeholder=""
+      [(ngModel)]="ong.nomeOng"
+      required
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input
+      label="CNPJ"
+      label-placement="floating"
+      fill="solid"
+      placeholder=""
+      [(ngModel)]="ong.nomeOng"
+      required
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input
+      label="Localização"
+      label-placement="floating"
+      fill="solid"
+      placeholder=""
+      [(ngModel)]="ong.localizacaoOng"
+      required
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input
+      type="tel"
+      pattern="[0-9]*"
+      label="Telefone"
+      label-placement="floating"
+      fill="solid"
+      placeholder="(DD)00000000"
+      [(ngModel)]="ong.telefoneOng"
+      required
+    ></ion-input>
+  </ion-item>
+  <h3 class="responsabilidade">Responsabilidade</h3>
+  <ion-item>
+    <ion-checkbox labelPlacement="end" required
+      >Me comprometo a promover assistência à Saúde, à alimentação, <br />
+      ao lazer e à moradia do meu futuro pet.</ion-checkbox
+    >
+    <br />
+  </ion-item>
+  <br />
+  <ion-item>
+    <ion-button expand="full">Finalizar Cadastro</ion-button>
+  </ion-item>
 </ion-content>
