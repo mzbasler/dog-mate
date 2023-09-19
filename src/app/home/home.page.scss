@@ -1,32 +1,22 @@
 ion-header,
 ion-header ion-toolbar {
   box-shadow: none;
-  --background: white;
-  --color: black;
 }
 
-ion-content {
-  --background: white;
-}
-
-ion-input[fill="outline"] {
+ion-input {
   --border-radius: 10px;
   --padding-start: 10px;
   --padding-end: 10px;
-  border-color: black;
-  color: black;
   height: 50px;
   margin: 10px 0;
 }
 
 .btn-container {
-  border-radius: 10px;
   margin: 10px 0;
-  overflow: hidden; /* Isso fará com que o botão dentro respeite o border-radius */
 }
 
 ion-button[expand="full"] {
-  margin: 0 !important; /* Removendo a margem */
+  margin: 0;
   height: 50px;
 }
 
@@ -52,7 +42,6 @@ ion-button[expand="full"] {
 
 #login-txt {
   font-size: 32px;
-  color: black;
   font-weight: 800;
 }
 
@@ -83,12 +72,9 @@ ion-button[expand="full"] {
 ion-footer,
 ion-footer ion-toolbar {
   box-shadow: none;
-  --background: white;
-  --color: black;
 }
 
 .footer-txt {
   text-align: center;
   font-size: 15px;
-  color: black;
 }
