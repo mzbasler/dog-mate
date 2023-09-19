@@ -1,16 +1,19 @@
-// header
-ion-header,
-ion-header ion-toolbar {
+ion-header {
   box-shadow: none;
-  --background: white;
-  --color: black;
+  background-color: white;
+  border: none;
 }
+
+ion-content {
+  border: none;
+}
+
 .logo-marca-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 0x;
+  padding: 0;
 }
 .logo {
   width: 30px;

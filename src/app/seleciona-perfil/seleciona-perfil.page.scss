@@ -1,10 +1,8 @@
-// header
 ion-header,
 ion-header ion-toolbar {
   box-shadow: none;
-  --background: white;
-  --color: black;
 }
+
 .logo-marca-wrap {
   display: flex;
   align-items: center;
@@ -27,11 +25,6 @@ ion-header ion-toolbar {
   padding: 0;
 }
 
-// content
-ion-content {
-  --background: white;
-}
-
 #container-criar-conta {
   margin: 20px;
   text-align: center;
@@ -44,7 +37,6 @@ ion-content {
 
 #criar-conta-txt {
   font-size: 32px;
-  color: black;
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -52,7 +44,6 @@ ion-content {
 
 #perfil-txt {
   font-size: 24px;
-  color: black;
   font-weight: 200;
   margin: 0;
   line-height: 1.2;
@@ -75,12 +66,9 @@ ion-content {
 ion-footer,
 ion-footer ion-toolbar {
   box-shadow: none;
-  --background: white;
-  --color: black;
 }
+
 .footer-txt {
   text-align: center;
   font-size: 15px;
-  color: black;
 }
-
