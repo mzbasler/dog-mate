@@ -53,6 +53,10 @@ ion-label {
 /* Estilizar o espaçamento entre os campos de entrada */
 ion-item {
   margin-bottom: 15px;
+  --padding-start: 0;
+  --padding-end: 0;
+  --inner-padding-start: 0;
+  --inner-padding-end: 0;
 }
 
 ion-select {

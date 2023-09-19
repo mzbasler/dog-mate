@@ -7,9 +7,9 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
   <ion-list>
-    <ion-title class="cadastroCao">Informações do cão</ion-title>
+    <h3 class="cadastroCao">Informações do cão</h3>
     <ion-item>
       <ion-input
         label="Nome do cão"
@@ -41,7 +41,7 @@
         required
       ></ion-input>
     </ion-item>
-    <ion-title class="checkBoxCao">O cão é castrado?</ion-title>
+    <h4 class="checkBoxCao">O cão é castrado?</h4>
     <ion-item>
       <ion-segment [(ngModel)]="cao.castrado">
         <ion-segment-button value="true">
@@ -52,7 +52,7 @@
         </ion-segment-button>
       </ion-segment>
     </ion-item>
-    <ion-title class="checkBoxCao">O cão é vermifugado?</ion-title>
+    <h4 class="checkBoxCao">O cão é vermifugado?</h4>
     <ion-item>
       <ion-segment [(ngModel)]="cao.vermifugado">
         <ion-segment-button value="true">
@@ -63,7 +63,7 @@
         </ion-segment-button>
       </ion-segment>
     </ion-item>
-    <ion-title class="checkBoxCao">Vacinas estão em dia?</ion-title>
+    <h4 class="checkBoxCao">Vacinas estão em dia?</h4>
     <ion-item>
       <ion-segment [(ngModel)]="cao.vacinas">
         <ion-segment-button value="true">
@@ -74,7 +74,7 @@
         </ion-segment-button>
       </ion-segment>
     </ion-item>
-    <ion-title class="checkBoxCao">Gênero:</ion-title>
+    <h4 class="checkBoxCao">Gênero:</h4>
     <ion-item>
       <ion-segment [(ngModel)]="cao.sexo">
         <ion-segment-button value="m">
@@ -96,7 +96,7 @@
       ></ion-textarea>
     </ion-item>
     <br />
-  
+
     <ion-item>
       <ion-button expand="full" (click)="adicionarCao()"
         >Finalizar Cadastro</ion-button
