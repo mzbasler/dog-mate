@@ -18,6 +18,8 @@ import { environment } from '../environments/environment';
 
 // Importação adicional para HttpClient
 import { HttpClientModule } from '@angular/common/http';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,7 +31,9 @@ import { HttpClientModule } from '@angular/common/http';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     FormsModule,
-    HttpClientModule, // Adicionando HttpClientModule às importações
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()), // Adicionando HttpClientModule às importações
   ],
   // Provedores de serviços
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
