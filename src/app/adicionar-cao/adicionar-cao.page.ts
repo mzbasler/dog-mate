@@ -40,8 +40,8 @@ export class AdicionarCaoPage implements OnInit {
       const blob = this.dataURLtoBlob(image.dataUrl);
       const url = await this.uploadImage(blob, image);
       console.log(url);
-    } catch (error) {
-      console.error(error);
+    } catch (e) {
+      console.log(e);
     }
   }
 

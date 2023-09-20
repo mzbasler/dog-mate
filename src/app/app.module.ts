@@ -18,8 +18,8 @@ import { environment } from '../environments/environment';
 
 // Importação adicional para HttpClient
 import { HttpClientModule } from '@angular/common/http';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import { provideStorage,getStorage } from '@angular/fire/storage';
+import { provideFirebaseApp } from '@angular/fire/app';
+import { provideStorage, getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [AppComponent],
@@ -40,9 +40,4 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
   // Componente principal que será carregado inicialmente
   bootstrap: [AppComponent],
 })
-export class AppModule {
-  constructor() {
-    initializeApp(environment.firebaseConfig);
-    getAnalytics();
-  }
-}
+export class AppModule {}
