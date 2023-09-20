@@ -11,17 +11,39 @@
   <div id="container-criar-conta">
     <p id="criar-conta-txt">Bem-vindo</p>
     <p id="perfil-txt">{{ nomeAdotante }}</p>
-    <div class="btn-wrap">
-      <ion-button class="custom-button" [routerLink]="['/cadastra-ong']">
-        <img class="btn-perfil" src="/assets/img/encontrar-cao.svg" alt="">
-      </ion-button>
-      <ion-button class="custom-button" [routerLink]="['/cadastra-adotante']">
-        <img class="btn-perfil" src="/assets/img/matchs.svg" alt="">
-      </ion-button>
-      <ion-button class="custom-button" [routerLink]="['/cadastra-adotante']">
-        <img class="btn-perfil" src="/assets/img/editar-perfil.svg" alt="">
-      </ion-button>
-    </div>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button fill="clear" [routerLink]="['/cadastra-ong']">
+            <img
+              class="btn-perfil"
+              src="/assets/img/encontrar-cao.svg"
+              alt=""
+            />
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="clear" [routerLink]="['/cadastra-adotante']">
+            <img class="btn-perfil" src="/assets/img/matchs.svg" alt="" />
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button fill="clear" [routerLink]="['/cadastra-adotante']">
+            <img
+              class="btn-perfil"
+              src="/assets/img/editar-perfil.svg"
+              alt=""
+            />
+          </ion-button>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="btn-wrap"></div>
   </div>
 </ion-content>
 
