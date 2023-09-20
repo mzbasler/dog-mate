@@ -27,6 +27,19 @@ ion-header ion-toolbar {
   padding: 0;
 }
 
+// Centralizar avatar do cão
+.center-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Altura e largura do avatar
+ion-avatar {
+  width: 100px;
+  height: 100px;
+}
+
 /* Formulário */
 ion-content {
   display: flex;
