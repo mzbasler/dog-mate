@@ -1,5 +1,8 @@
 <ion-header [translucent]="false">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
     <div class="logo-marca-wrap">
       <ion-img src="assets/icon/logo.svg" class="logo"></ion-img>
       <ion-title class="marca">Dog Mate</ion-title>
@@ -16,27 +19,19 @@
       <ion-row>
         <ion-col>
           <ion-button fill="clear" [routerLink]="['/cadastra-ong']">
-            <img
-              class="btn-perfil"
-              src="/assets/img/encontrar-cao.svg"
-              alt=""
-            />
+            <img src="/assets/img/btn-encontrar-cao.svg" alt="" />
           </ion-button>
         </ion-col>
         <ion-col>
           <ion-button fill="clear" [routerLink]="['/cadastra-adotante']">
-            <img class="btn-perfil" src="/assets/img/matchs.svg" alt="" />
+            <img src="/assets/img/btn-matchs.svg" alt="" />
           </ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <ion-button fill="clear" [routerLink]="['/cadastra-adotante']">
-            <img
-              class="btn-perfil"
-              src="/assets/img/editar-perfil.svg"
-              alt=""
-            />
+            <img src="/assets/img/btn-editar-perfil.svg" alt="" />
           </ion-button>
         </ion-col>
         <ion-col></ion-col>

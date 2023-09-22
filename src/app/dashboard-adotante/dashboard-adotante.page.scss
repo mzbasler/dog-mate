@@ -64,13 +64,6 @@ ion-content {
   align-items: center;
 }
 
-.btn-perfil {
-  height: 100px;
-  width: 100px;
-  margin: 15px;
-  padding: 0;
-}
-
 //footer
 ion-footer,
 ion-footer ion-toolbar {
@@ -85,10 +78,10 @@ ion-footer ion-toolbar {
 }
 
 .custom-button {
-  --background: transparent; 
-  border: none ;
-  padding: 0; 
-  box-shadow: none; 
-  text-decoration: none; 
-  outline: none; 
+  --background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  text-decoration: none;
+  outline: none;
 }
