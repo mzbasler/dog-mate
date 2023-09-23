@@ -1,4 +1,5 @@
 export class Adotante {
+  userTipe = 'adotante';
   emailAdotante: string = '';
   senhaAdotante: string = '';
   repetirSenhaAdotante: string = '';
@@ -19,6 +20,7 @@ export class Adotante {
 }
 
 export class Ong {
+  userTipe = 'ong';
   emailOng: string = '';
   senhaOng: string = '';
   repetirSenhaOng: string = '';
