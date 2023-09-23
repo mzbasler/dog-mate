@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OngService } from '../services/ong.service';
 import { Ong } from '../models/estruturas';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastra-ong',
@@ -9,17 +10,17 @@ import { Ong } from '../models/estruturas';
 })
 export class CadastraOngPage {
   ong: Ong = new Ong();
+  submited = false;
 
-  constructor(private ongService: OngService) {}
+  constructor(private router: Router, private ongService: OngService) {}
 
-  adicionarAdotante() {
-    this.ongService.addOng(this.ong).subscribe(
-      (response: any) => {
-        console.log('Adotante adicionado com sucesso', response);
-      },
-      (error: any) => {
-        console.error('Erro ao adicionar adotante', error);
-      }
-    );
+  adicionarOng(): void {
+    this.ongService.create(this.ong).then(() => {
+      console.log('Created new item successfully!');
+      this.submited = true;
+
+      // Suponha que 'this.ong.tipo' contém o tipo do usuário ("admin" ou "user")
+      this.router.navigate(['/dashboard-ong']);
+    });
   }
 }

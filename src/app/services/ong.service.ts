@@ -10,7 +10,6 @@ import {
 @Injectable({
   providedIn: 'root',
 })
-
 export class OngService {
   url = 'http://localhost:3000/';
   adotante: Ong = new Ong();
@@ -21,7 +20,7 @@ export class OngService {
     this.ongsRef = db.list(this.dbPath);
   }
 
-  addOng(ong: Ong): any {
+  create(ong: Ong): any {
     return this.ongsRef.push(ong);
   }
 
