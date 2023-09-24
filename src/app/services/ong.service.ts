@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Ong } from '../models/estruturas';
 import {
@@ -11,12 +10,13 @@ import {
   providedIn: 'root',
 })
 export class OngService {
-  url = 'http://localhost:3000/';
-  adotante: Ong = new Ong();
-  private dbPath = 'dog-mate-fd3f4/ongs';
+  // Removido a URL, já que você vai usar o Firebase
+  ong: Ong = new Ong();
+  private dbPath = '/ongs'; // Atualizado para apenas '/ongs'
   ongsRef: AngularFireList<Ong>;
 
-  constructor(private http: HttpClient, private db: AngularFireDatabase) {
+  constructor(private db: AngularFireDatabase) {
+    // HttpClient removido
     this.ongsRef = db.list(this.dbPath);
   }
 
@@ -24,7 +24,8 @@ export class OngService {
     return this.ongsRef.push(ong);
   }
 
-  getNomeOng(): Observable<string> {
-    return this.http.get<string>('/ongs');
+  getNomeOng(): Observable<any> {
+    // Tipo atualizado para 'any'
+    return this.ongsRef.valueChanges(); // Usando o Firebase aqui
   }
 }

@@ -1,4 +1,5 @@
 export class Adotante {
+  id?: string;
   userTipe = 'adotante';
   emailAdotante: string = '';
   senhaAdotante: string = '';
@@ -20,6 +21,7 @@ export class Adotante {
 }
 
 export class Ong {
+  id?: string;
   userTipe = 'ong';
   emailOng: string = '';
   senhaOng: string = '';
